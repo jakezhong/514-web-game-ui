@@ -29,6 +29,7 @@ ui/js/script2.js
 
 #### Libraries that I used:
 - JQuery
+- Google font
 
 ### Screenshot
 ![Arcade home](https://raw.githubusercontent.com/jakezhong/514-web-game-ui/master/ui/screenshots/arcade-home.png)
