@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+	<!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+    <title>Mastermind</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico" />
+    <link type="text/css" rel="stylesheet" media="all" href="../ui/css/style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="../ui/js/jquery.js" type="text/javascript"></script>
+    <!-- End Remove -->
+</head>
+
+<body>
+	
+	<div class="site">
+		<header id="header">
+			<div class="wrap">
+				<a href="1_index.html" class="logo"><img src="../ui/svg/home.svg" alt="home"></a>
+			</div>
+		</header>
+		<main id="mastermind" class="game-datas" data-lives="10" data-attempts="1" data-length="4">
+			<section class="arcade-center">
+				<div class="wrap">
+					<div class="game-container">
+						<div class="center flex">
+							<div class="game-controller">
+								<div class="game-info">
+									<h3>Play against your computer!</h3>
+									<p>Click on the corresponding colored peg to pick and place your peg in the row</p>
+								</div>
+								<ul class="flex">
+									<li>
+										<button class="ball" data-color="blue" data-guess="b"></button>
+									</li>
+									<li>
+										<button class="ball" data-color="red" data-guess="r"></button>
+									</li>
+									<li>
+										<button class="ball" data-color="yellow" data-guess="y"></button>
+									</li>
+									<li>
+										<button class="ball" data-color="orange" data-guess="o"></button>
+									</li>
+									<li>
+										<button class="ball" data-color="green" data-guess="g"></button>
+									</li>
+									<li>
+										<button class="ball" data-color="purple" data-guess="p"></button>
+									</li>
+								</ul>
+								<form>
+									<input type="text" name="guess" class="guess">
+									<input type="submit" class="btn small check" value="Check">
+									<button type="button" class="btn small delete">Delete</button>
+								</form>
+							</div>
+							<div class="game-board">
+								<div class="board-header">
+									<h3>Mastermind</h3>
+								</div>
+								<div class="board-center">
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball active" data-color="red"></span></li>
+											<li><span class="ball active" data-color="blue"></span></li>
+											<li><span class="ball active" data-color="yellow"></span></li>
+											<li><span class="ball active" data-color="orange"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span class="active" data-status="exact"></span></li>
+											<li><span class="active" data-status="exact"></span></li>
+											<li><span class="active" data-status="partial"></span></li>
+											<li><span class="active" data-status="partial"></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball" data-color=""></span></li>
+											<li><span class="ball" data-color=""></span></li>
+											<li><span class="ball" data-color=""></span></li>
+											<li><span class="ball" data-color=""></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+									<div class="board-row flex">
+										<span class="pin"></span>
+										<ul class="row-left flex">
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+											<li><span class="ball"></span></li>
+										</ul>
+										<ul class="row-right flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="board-footer">
+									<h4>Solution</h4>
+									<div class="board-row">
+										<ul class="row-left flex">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</div>
+	
+    <script src="../ui/js/script.js" type="text/javascript"></script>
+</body>
+</html>

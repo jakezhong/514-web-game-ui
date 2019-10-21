@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+	<!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+    <title>Hangman</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico" />
+    <link type="text/css" rel="stylesheet" media="all" href="../ui/css/style2.css" />
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="../ui/js/jquery.js" type="text/javascript"></script>
+    <!-- End Remove -->
+</head>
+
+<body>
+	
+	<div class="site">
+		<header id="header">
+			<div class="wrap">
+				<a href="1_index.html" class="logo"><img src="../ui/svg/home.svg" alt="home"></a>
+			</div>
+		</header>
+		<main id="hangman" class="game-datas" data-lives="6" data-attempts="0" data-previous="chekopqxy" data-misses="kpqxy">
+			<section class="console-center flex">
+				<div class="wrap">
+					<div class="game-container">
+						<div class="game-info">
+							<ul>
+								<li>Previous: <span class="info-previous"></span></li>
+								<li>Misses: <span class="info-misses"></span></li>
+								<li>Lives: <span class="info-lives"></span></li>
+							</ul>
+						</div>
+						<h2 class="header">ch***e *he *o*** **o* he*e</h2>
+						<div class="center flex">
+							<form>
+  								<div class="form-group">
+									<input type="text" class="guess">
+								</div>
+							</form>
+							<div class="player">
+								<div class="base"></div>
+								<div class="man">
+									<span class="head"></span>
+									<span class="body"></span>
+									<span class="left-hand"></span>
+									<span class="right-hand"></span>
+									<span class="left-leg"></span>
+									<span class="right-leg"></span>
+								</div>
+							</div>
+							<div class="popup">
+								<h4>Game Over</h4>
+								<p>Your score: 200</p>
+								<button class="btn play-again">Play Again</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</div>
+	
+    <script src="../ui/js/script2.js" type="text/javascript"></script>
+</body>
+</html>

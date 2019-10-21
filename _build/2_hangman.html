@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+	<!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+    <title>Hangman</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico" />
+    <link type="text/css" rel="stylesheet" media="all" href="../ui/css/style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="../ui/js/jquery.js" type="text/javascript"></script>
+    <!-- End Remove -->
+</head>
+
+<body>
+	
+	<div class="site">
+		<header id="header">
+			<div class="wrap">
+				<a href="1_index.html" class="logo"><img src="../ui/svg/home.svg" alt="home"></a>
+			</div>
+		</header>
+		<main id="hangman" class="game-datas" data-lives="6" data-attempts="0" data-previous="chekopqxy" data-misses="kpqxy">
+			<section class="arcade-center flex">
+				<div class="wrap">
+					<div class="game-container">
+						<div class="game-info">
+							<ul>
+								<li>Previous: <span class="info-previous"></span></li>
+								<li>Misses: <span class="info-misses"></span></li>
+								<li>Lives: <span class="info-lives"></span></li>
+							</ul>
+						</div>
+						<h2 class="header">ch___e _he _o___ __o_ he_e</h2>
+						<div class="center flex">
+							<form>
+								<div class="form-check-group flex">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-a" value="a">
+									  <span>a</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-b" value="b">
+									  <span>b</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-c" value="c">
+									  <span>c</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-d" value="d">
+									  <span>d</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-e" value="e">
+									  <span>e</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-f" value="f">
+									  <span>f</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-g" value="g">
+									  <span>g</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-h" value="h">
+									  <span>h</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-i" value="i">
+									  <span>i</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-j" value="j">
+									  <span>j</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-k" value="k">
+									  <span>k</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-l" value="l">
+									  <span>l</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-m" value="m">
+									  <span>m</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-n" value="n">
+									  <span>n</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-o" value="o">
+									  <span>o</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-p" value="p">
+									  <span>p</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-q" value="q">
+									  <span>q</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-r" value="r">
+									  <span>r</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-s" value="s">
+									  <span>s</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-t" value="t">
+									  <span>t</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-u" value="u">
+									  <span>u</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-v" value="v">
+									  <span>v</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-w" value="w">
+									  <span>w</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-x" value="x">
+									  <span>x</span>
+									</div>
+									<div class="form-check checked">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-y" value="y">
+									  <span>y</span>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="guess" id="hangman-z" value="z">
+									  <span>z</span>
+									</div>
+								</div>
+							</form>
+							<div class="player">
+								<div class="base"></div>
+								<div class="man">
+									<span class="head"></span>
+									<span class="body"></span>
+									<span class="left-hand"></span>
+									<span class="right-hand"></span>
+									<span class="left-leg"></span>
+									<span class="right-leg"></span>
+								</div>
+							</div>
+							<div class="popup">
+								<h4>Game Over</h4>
+								<p>Your score: 200</p>
+								<button class="btn play-again">Play Again</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</div>
+	
+    <script src="../ui/js/script.js" type="text/javascript"></script>
+</body>
+</html>
